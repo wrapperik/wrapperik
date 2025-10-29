@@ -1,16 +1,30 @@
-## Hi there 👋
+# Hello, I'm Rikus Pretorius!
 
-<!--
-**wrapperik/wrapperik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🎓 Double Major in Interactive Development & User Experience Design
 
-Here are some ideas to get you started:
+I am a student at the **Open Window Institute**, driven by the goal of becoming a **Full Stack Developer and UX Designer**. My passion lies in creating products that are both functionally robust and delightful to use.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### ✨ My Development Philosophy (Refined)
+
+I am dedicated to crafting **accessible**, **responsive**, and highly performant web applications. My focus is always on following **best industry practices** to deliver clean, scalable code that puts the user experience first.
+
+### 🛠️ Core Skills & Technologies
+
+| Category | Tools and Languages |
+| :--- | :--- |
+| **Frontend** | **REACT.JS**, HTML5, CSS3, JavaScript (ES6+) |
+| **Backend/Database** | Node.js, **MySQL** |
+| **Design/UX** | User Research, Wireframing, Prototyping |
+
+### 💡 Featured Projects
+
+Take a look at my pinned repositories below to see my work in:
+
+* Building responsive, component-based UIs with React.
+* Integrating frontends with relational databases (MySQL).
+* Applying user-centric design principles to live applications.
+
+### 📫 Let's Connect
+* rikush60@gmail.com
