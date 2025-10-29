@@ -7,7 +7,6 @@
 
 *Crafting digital experiences that are both beautiful and functional* ✨
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://linkedin.com/in/rikus-pretorius)
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=Gmail&logoColor=white)](mailto:rikush60@gmail.com)
 
 </div>
@@ -24,7 +23,6 @@ I'm passionate about creating **digital products** that solve real problems and 
 - 🎯 **User-First Approach**: Every line of code serves the user experience
 - 🔧 **Clean Architecture**: Writing maintainable, scalable, and readable code
 - 📱 **Responsive Design**: Ensuring seamless experiences across all devices
-- ♿ **Accessibility**: Building inclusive applications for everyone
 
 ---
 
@@ -44,28 +42,12 @@ I'm passionate about creating **digital products** that solve real problems and 
 
 ### Design & UX
 ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe XD](https://img.shields.io/badge/-Adobe%20XD-FF61F6?style=for-the-badge&logo=adobe-xd&logoColor=white)
 
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=wrapperik&show_icons=true&theme=gradient&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=79C0FF" alt="GitHub Stats" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wrapperik&layout=compact&theme=gradient&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" height="180"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=wrapperik&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9" alt="GitHub Streak" />
 </div>
 
 ---
 
 ## 💡 Featured Projects
-
-<div align="center">
 
 🚧 **Check out my pinned repositories below!** 🚧
 
