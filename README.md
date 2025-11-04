@@ -1,11 +1,11 @@
-# 👋 Hey there, I'm Rikus Pretorius!
+# Hey there, I'm Rikus Pretorius!
 
 <div align="center">
   
-### 🎓 Double Major in Interactive Development & User Experience Design
+### Double Major in Interactive Development & User Experience Design
 **Open Window Institute** | Aspiring Full Stack Developer & UX Designer
 
-*Crafting digital experiences that are both beautiful and functional* ✨
+*Crafting digital experiences that are both beautiful and functional* 
 
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=Gmail&logoColor=white)](mailto:rikush60@gmail.com)
 
@@ -13,20 +13,20 @@
 
 ---
 
-## 🚀 About Me
+##  About Me
 
 I'm passionate about creating **digital products** that solve real problems and delight users. My journey combines the technical precision of full-stack development with the human-centered approach of UX design.
 
 > *"Great design is not just what it looks like – great design is how it works."* - Steve Jobs
 
-### ✨ My Development Philosophy
+###  My Development Philosophy
 - 🎯 **User-First Approach**: Every line of code serves the user experience
 - 🔧 **Clean Architecture**: Writing maintainable, scalable, and readable code
 - 📱 **Responsive Design**: Ensuring seamless experiences across all devices
 
 ---
 
-## 🛠️ Tech Stack & Skills
+##  Tech Stack & Skills
 
 <div align="center">
 
@@ -47,9 +47,9 @@ I'm passionate about creating **digital products** that solve real problems and 
 
 ---
 
-## 💡 Featured Projects
+##  Featured Projects
 
-🚧 **Check out my pinned repositories below!** 🚧
+**Check out my pinned repositories below!** �
 
 *Showcasing my expertise in:*
 
@@ -62,16 +62,16 @@ I'm passionate about creating **digital products** that solve real problems and 
 
 ---
 
-## 🎯 Current Focus
+##  Current Focus
 
-- 🌱 Deepening my knowledge in **Advanced React Patterns**
-- 🔍 Exploring **TypeScript** for better code reliability
-- 🎨 Mastering **Design Systems** and **Component Libraries**
-- 📚 Learning **Node.js** backend development best practices
+- Deepening my knowledge in **Advanced React Patterns**
+- Exploring **TypeScript** for better code reliability
+- Mastering **Design Systems** and **Component Libraries**
+- Learning **Node.js** backend development best practices
 
 ---
 
-## 📫 Let's Connect!
+##  Let's Connect!
 
 <div align="center">
 
@@ -83,6 +83,6 @@ I'm always excited to collaborate on interesting projects or discuss new opportu
 
 ---
 
-⭐ *Thanks for visiting my profile! Feel free to star any repositories that interest you.* ⭐
+*Thanks for visiting my profile! Feel free to star any repositories that interest you.* 
 
 </div>
