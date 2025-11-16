@@ -1,8 +1,14 @@
-# Hey there, I'm Rikus Pretorius!
-
-<div align="left">
+<div align="center">
   
-### Double Major in Interactive Development & User Experience Design
+![Banner](banner.png)
+
+</div>
+
+# 👋 Hey there, I'm Rikus Pretorius!
+
+<div align="center">
+  
+### 🎓 Double Major in Interactive Development & User Experience Design
 **Open Window Institute** | Aspiring Full Stack Developer & UX Designer
 
 *Crafting digital experiences that are both beautiful and functional* 
