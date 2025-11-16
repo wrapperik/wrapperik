@@ -57,7 +57,6 @@ Creative technologist passionate about building accessible, responsive, and user
 ## 📫 Contact
 
 - **Email:** [rikush60@gmail.com](mailto:rikush60@gmail.com)
-- **LinkedIn:** [linkedin.com/in/rikus-pretorius](https://linkedin.com/in/rikus-pretorius)
 
 ---
 
