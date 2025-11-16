@@ -28,6 +28,7 @@ Creative technologist passionate about building accessible, responsive, and user
 
 ## 🛠️ Skills & Tech Stack
 
+
 <div align="center">
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -35,13 +36,14 @@ Creative technologist passionate about building accessible, responsive, and user
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
 <img src="https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=adobe-xd&logoColor=white" />
 </div>
 
 - **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
-- **Backend:** Node.js, MySQL
-- **Design/UX:** Figma, Adobe XD, User Research, Wireframing, Prototyping
+- **Backend:** Node.js, MySQL, MongoDB
+- **Design/UX:** Figma, Affinity, User Research, Wireframing, Prototyping
 
 ---
 
@@ -49,10 +51,9 @@ Creative technologist passionate about building accessible, responsive, and user
 
 | Project | Description | Link |
 | ------- | ----------- | ---- |
-| **Project One** | Responsive web app for event management. | [GitHub Repo](https://github.com/wrapperik/project-one) |
-| **Project Two** | Interactive portfolio showcasing design and dev skills. | [GitHub Repo](https://github.com/wrapperik/project-two) |
-| **Project Three** | E-commerce platform with custom UX flows. | [GitHub Repo](https://github.com/wrapperik/project-three) |
-| **Project Four** | Social platform for creative collaboration. | [GitHub Repo](https://github.com/wrapperik/project-four) |
+| **Gamestat** | Responsive web app for event management. | [GitHub Repo](https://github.com/wrapperik/formative-one-gamestat.git) |
+| **Billionaires** | Interactive portfolio showcasing design and dev skills. | [GitHub Repo](https://github.com/victordupreez0/Code_Blooded_DV200_S1SA2_Ecommerce_App.git) |
+| **Unmute** | E-commerce platform with custom UX flows. | [GitHub Repo] (https://github.com/wrapperik/unMute_RikusPretorius_241044.git) |
 
 ---
 
