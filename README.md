@@ -40,7 +40,7 @@ Creative technologist passionate about building accessible, responsive, and user
 | Project | Description | Link |
 | ------- | ----------- | ---- |
 | **Gamestat** | Compare games easily. | [GitHub Repo](https://github.com/wrapperik/formative-one-gamestat.git) |
-| **Billionaires** | E-cpmmerce site for the rich. | [GitHub Repo](https://github.com/victordupreez0/Code_Blooded_DV200_S1SA2_Ecommerce_App.git) |
+| **Billionaires** | E-commerce site for the rich. | [GitHub Repo](https://github.com/victordupreez0/Code_Blooded_DV200_S1SA2_Ecommerce_App.git) |
 | **Unmute** | Online community for men's mental health. | [GitHub Repo](https://github.com/wrapperik/unMute_RikusPretorius_241044.git) |
 
 ---
