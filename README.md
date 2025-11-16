@@ -3,13 +3,20 @@
 <div align="center">
 	<img src="banner.png" alt="Banner" width="100%" />
 	<br>
-	<img src="https://avatars.githubusercontent.com/u/your-github-username" alt="Rikus Pretorius" width="120" style="border-radius:50%;margin-top:20px;" />
+	<img src="https://avatars.githubusercontent.com/u/wrapperik" alt="Rikus Pretorius" width="120" style="border-radius:50%;margin-top:20px;" />
   
-	# 👋 Hi, I'm Rikus Pretorius
-	**Full Stack Developer & UX Designer**  
-	Double Major in Interactive Development & User Experience Design  
-	Open Window Institute
+<div align="center">
+	<img src="banner.png" alt="Banner" width="100%" />
 	<br>
+	<img src="https://avatars.githubusercontent.com/u/wrapperik" alt="Rikus Pretorius" width="120" style="border-radius:50%;margin-top:20px;" />
+</div>
+
+# 👋 Hi, I'm Rikus Pretorius
+**Full Stack Developer & UX Designer**  
+Double Major in Interactive Development & User Experience Design  
+Open Window Institute
+
+<div align="center">
 	<a href="mailto:rikush60@gmail.com">
 		<img src="https://img.shields.io/badge/Email-rikush60@gmail.com-EA4335?style=for-the-badge&logo=Gmail&logoColor=white" alt="Email" />
 	</a>
@@ -38,7 +45,6 @@ Creative technologist passionate about building accessible, responsive, and user
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-<img src="https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=adobe-xd&logoColor=white" />
 </div>
 
 - **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
