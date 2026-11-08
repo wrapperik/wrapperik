@@ -62,6 +62,10 @@ This year I shipped three products: a cross-platform learning management system 
 
 My three DV300 major projects from 2026. Each repository has full documentation: setup, architecture, testing and a demo.
 
+<table>
+<tr>
+<td>
+
 <h3><img src="assets/generated/koru-title.svg" width="100%" alt="Koru" /></h3>
 
 <a href="https://github.com/wrapperik/koru"><img src="assets/projects/koru.webp" width="100%" alt="Koru running in a desktop window, with its dashboard, course list, assignments and progress cards" /></a>
@@ -87,6 +91,14 @@ Koru replaces a college's patchwork of tools with one POPIA-compliant platform f
 <img src="assets/projects/koru-teacher.webp" width="49%" alt="Koru lecturer view" />
 <img src="assets/projects/koru-admin.webp" width="49%" alt="Koru administrator view" />
 </details>
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
 
 <h3><img src="assets/generated/cardinal-title.svg" width="100%" alt="Cardinal" /></h3>
 
@@ -116,6 +128,14 @@ Each question's answers sit at the four compass points around it, and you flick 
 <img src="assets/projects/cardinal-games.webp" width="49%" alt="Cardinal game templates and checkpoint screen" />
 </details>
 
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+
 <h3><img src="assets/generated/droplet-title.svg" width="100%" alt="Droplet" /></h3>
 
 <a href="https://droplet-tan.vercel.app"><img src="assets/projects/droplet.webp" width="100%" alt="Droplet's start screen with the message bar, the workspaces menu, the board and the brand palette" /></a>
@@ -143,6 +163,10 @@ Founders say what they need, such as an invoice, a brand palette or a business p
 <img src="assets/projects/droplet-brand.webp" width="49%" alt="Droplet brand workspace with colour roles and contrast checks" />
 <img src="assets/projects/droplet-invoice.webp" width="49%" alt="Droplet invoice workspace in Guide mode" />
 </details>
+
+</td>
+</tr>
+</table>
 
 ## Activity
 
