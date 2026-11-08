@@ -27,18 +27,23 @@ const PROJECTS = [
 const THEMES = {
   dark: {
     card: '#161b22', border: '#30363d', text: '#e6edf3', muted: '#8b949e', faint: '#21262d',
+    glow: '#3B9DFF', glowOpacity: 0.32,
     accent: '#F2C21E', heat: ['#21262d', '#4d3f0c', '#8a6c10', '#c99d16', '#F2C21E'],
     koru: '#A57BE8', cardinal: '#E5694E', droplet: '#3B9DFF',
   },
   light: {
     card: '#ffffff', border: '#d0d7de', text: '#1f2328', muted: '#59636e', faint: '#eaeef2',
+    glow: '#3B9DFF', glowOpacity: 0.22,
     accent: '#9A6700', heat: ['#ebedf0', '#fbe7a1', '#f2cb45', '#d9a10b', '#9a6700'],
     koru: '#5B2A9E', cardinal: '#B5371F', droplet: '#1F6FD1',
   },
 };
 
-const SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
-const MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace";
+// Montserrat (SIL OFL, see assets/fonts/OFL.txt), subset and embedded so it renders inside <img>.
+const FONT = (await readFile(join(ROOT, 'assets', 'fonts', 'Montserrat-sub.woff2'))).toString('base64');
+const FONT_FACE = `@font-face { font-family: 'Montserrat'; font-weight: 400 700; src: url(data:font/woff2;base64,${FONT}) format('woff2'); }`;
+const SANS = "Montserrat, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
+const MONO = SANS;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 const fmt = (n) => (n == null ? '–' : Number(n).toLocaleString('en-US'));
 const IGNORE_LANGS = new Set(['Procfile', 'Dockerfile', 'Makefile', 'Batchfile', 'Shell']);
@@ -149,9 +154,10 @@ async function fetchProject(p, userId) {
 // ---------- svg helpers ----------
 
 const reduceMotion = `@media (prefers-reduced-motion: reduce) { * { animation: none !important; } .rm-show { opacity: 1 !important; } .rm-hide { opacity: 0 !important; } }`;
-const frame = (w, h, t, body, title) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
+const frame = (w, h, t, body, title, bare = false) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
 <title>${esc(title)}</title>
-<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="14" fill="${t.card}" stroke="${t.border}"/>
+<style>${FONT_FACE}</style>
+${bare ? '' : `<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="14" fill="${t.card}" stroke="${t.border}"/>`}
 ${body}
 </svg>
 `;
@@ -159,7 +165,7 @@ ${body}
 // ---------- cards ----------
 
 function hero(t, data) {
-  const W = 840, H = 220, cx = 112, cy = 110, r = 70;
+  const W = 840, H = 230, cx = 116, cy = 118, r = 70;
   const C = 2 * Math.PI * r, arc = C / 3 - 14;
   const ring = ['koru', 'cardinal', 'droplet'].map((k, i) =>
     `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${t[k]}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${arc.toFixed(1)} ${(C - arc).toFixed(1)}" transform="rotate(${i * 120 - 90} ${cx} ${cy})"/>`).join('\n  ');
@@ -171,30 +177,38 @@ function hero(t, data) {
     ['accessible, considered UX.', t.accent],
   ];
   const per = 3, total = per * lines.length;
+  // each variant repeats an invisible "I build " so the word starts exactly where the visible text ends
   const words = lines.map(([txt, col], i) =>
-    `<text class="w ${i === 0 ? 'rm-show' : 'rm-hide'}" style="animation-delay:${i * per}s" x="294" y="134" font-family="${SANS}" font-size="21" font-weight="600" fill="${col}">${esc(txt)}</text>`).join('\n  ');
+    `<text class="w ${i === 0 ? 'rm-show' : 'rm-hide'}" style="animation-delay:${i * per}s" x="222" y="142" font-family="${SANS}" font-size="22" font-weight="500" xml:space="preserve"><tspan fill-opacity="0">I build </tspan><tspan fill="${col}" font-weight="700">${esc(txt)}</tspan></text>`).join('\n  ');
   const body = `<style>
   .w { opacity: 0; animation: cycle ${total}s infinite; }
-  @keyframes cycle { 0% { opacity: 0; transform: translateY(8px); } 2% { opacity: 1; transform: none; } ${((per / total) * 100 - 2).toFixed(1)}% { opacity: 1; transform: none; } ${((per / total) * 100).toFixed(1)}% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 0; } }
+  @keyframes cycle { 0% { opacity: 0; transform: translateY(6px); } 3% { opacity: 1; transform: none; } ${((per / total) * 100 - 1).toFixed(1)}% { opacity: 1; transform: none; } ${((per / total) * 100 + 2).toFixed(1)}% { opacity: 0; transform: translateY(-6px); } 100% { opacity: 0; } }
   .spin { animation: spin 24s linear infinite; transform-origin: ${cx}px ${cy}px; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .dot { animation: pulse 2.4s ease-in-out infinite; }
   @keyframes pulse { 50% { opacity: .35; } }
   ${reduceMotion}
 </style>
-<defs><clipPath id="av"><circle cx="${cx}" cy="${cy}" r="${r - 9}"/></clipPath></defs>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="0%" r="75%" fx="50%" fy="0%" gradientTransform="translate(0 0) scale(1 1.15)">
+    <stop offset="0%" stop-color="${t.glow}" stop-opacity="${t.glowOpacity}"/>
+    <stop offset="55%" stop-color="${t.glow}" stop-opacity="${(t.glowOpacity / 4).toFixed(3)}"/>
+    <stop offset="100%" stop-color="${t.glow}" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="av"><circle cx="${cx}" cy="${cy}" r="${r - 9}"/></clipPath>
+</defs>
+<rect width="${W}" height="${H}" fill="url(#glow)"/>
 <g class="spin">
   ${ring}
 </g>
 ${data.avatar ? `<image href="${data.avatar}" x="${cx - r + 9}" y="${cy - r + 9}" width="${2 * (r - 9)}" height="${2 * (r - 9)}" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice"/>` : ''}
-<text x="214" y="62" font-family="${MONO}" font-size="12" letter-spacing="2" fill="${t.muted}">HELLO, I'M</text>
-<text x="212" y="102" font-family="${SANS}" font-size="38" font-weight="700" fill="${t.text}">Rikus Pretorius</text>
-<text x="214" y="134" font-family="${SANS}" font-size="21" fill="${t.text}">I build</text>
+<text x="222" y="66" font-family="${SANS}" font-size="12" font-weight="600" letter-spacing="3" fill="${t.muted}">HELLO, I'M</text>
+<text x="220" y="108" font-family="${SANS}" font-size="40" font-weight="700" letter-spacing="-0.5" fill="${t.text}">Rikus Pretorius</text>
+<text x="222" y="142" font-family="${SANS}" font-size="22" font-weight="500" fill="${t.text}" xml:space="preserve">I build </text>
   ${words}
-<line x1="214" y1="160" x2="${W - 32}" y2="160" stroke="${t.faint}"/>
-<circle class="dot" cx="220" cy="185" r="4" fill="${t.accent}"/>
-<text x="232" y="189" font-family="${MONO}" font-size="12.5" fill="${t.muted}">Interactive Development + UX Design · Open Window · Class of ${YEAR}</text>`;
-  return frame(W, H, t, body, 'Rikus Pretorius: full-stack developer and UX designer');
+<circle class="dot" cx="227" cy="183" r="4" fill="${t.accent}"/>
+<text x="240" y="187.5" font-family="${SANS}" font-size="13" font-weight="500" fill="${t.muted}">Interactive Development + UX Design · Open Window · Class of ${YEAR}</text>`;
+  return frame(W, H, t, body, 'Rikus Pretorius: full-stack developer and UX designer', true);
 }
 
 function stats(t, d) {
@@ -211,7 +225,7 @@ function stats(t, d) {
     return `<g class="fade" style="animation-delay:${i * 90}ms">
   <rect x="${x}" y="66" width="${tw}" height="78" rx="10" fill="${t.faint}" fill-opacity=".55"/>
   <text x="${x + 16}" y="104" font-family="${SANS}" font-size="28" font-weight="700" fill="${i === 0 ? t.accent : t.text}">${v}</text>
-  <text x="${x + 16}" y="128" font-family="${MONO}" font-size="11" letter-spacing=".5" fill="${t.muted}">${esc(l.toUpperCase())}</text>
+  <text x="${x + 16}" y="128" font-family="${MONO}" font-size="10" font-weight="600" letter-spacing=".6" fill="${t.muted}">${esc(l.toUpperCase())}</text>
 </g>`;
   }).join('\n');
 
@@ -280,7 +294,7 @@ function pulse(t, p, d) {
   const mSvg = metrics.map(([v, l], i) => {
     const x = 32 + i * 104;
     return `<g class="fade" style="animation-delay:${i * 90}ms"><text x="${x}" y="98" font-family="${SANS}" font-size="27" font-weight="700" fill="${i === 0 ? col : t.text}">${v}</text>
-<text x="${x}" y="120" font-family="${MONO}" font-size="10.5" letter-spacing=".5" fill="${t.muted}">${esc(l.toUpperCase())}</text></g>`;
+<text x="${x}" y="120" font-family="${MONO}" font-size="9.5" font-weight="600" letter-spacing=".6" fill="${t.muted}">${esc(l.toUpperCase())}</text></g>`;
   }).join('\n');
   // sparkline: weekly commits this year
   const sx = 476, sw = W - 28 - sx, base = 120, sh = 56;
@@ -300,7 +314,7 @@ function pulse(t, p, d) {
 <rect x="0" y="22" width="5" height="${H - 44}" rx="2.5" fill="${col}"/>
 <circle cx="38" cy="40" r="6" fill="${col}"/>
 <text x="54" y="45" font-family="${MONO}" font-size="13" font-weight="700" letter-spacing="2" fill="${t.text}">${esc(p.name.toUpperCase())}</text>
-<text x="${54 + p.name.length * 11 + 14}" y="45" font-family="${SANS}" font-size="13" fill="${t.muted}">${esc(p.kind)} · ${esc(p.team)}</text>
+<text x="${54 + p.name.length * 13 + 14}" y="45" font-family="${SANS}" font-size="13" fill="${t.muted}">${esc(p.kind)} · ${esc(p.team)}</text>
 <text x="${W - 28}" y="45" text-anchor="end" font-family="${MONO}" font-size="12" fill="${t.muted}">${esc(period)}</text>
 ${mSvg}
 ${bars}

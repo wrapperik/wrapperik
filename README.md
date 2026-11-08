@@ -1,6 +1,3 @@
-<!-- Header -->
-<img src="banner.png" alt="Rikus Pretorius, full-stack developer and UX designer" width="100%" />
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/generated/hero-dark.svg" />
   <img src="assets/generated/hero-light.svg" width="100%" alt="Hello, I'm Rikus Pretorius. I build full-stack products end to end. Interactive Development and UX Design, Open Window, class of 2026." />
@@ -33,31 +30,31 @@ This year I shipped three products: a cross-platform learning management system 
 <table>
   <tr>
     <td><b>Languages</b></td>
-    <td><img src="https://img.shields.io/badge/TypeScript-161b22?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" /> <img src="https://img.shields.io/badge/JavaScript-161b22?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" /> <img src="https://img.shields.io/badge/C%23-161b22?style=for-the-badge&logo=dotnet&logoColor=A57BE8" alt="C#" /> <img src="https://img.shields.io/badge/SQL-161b22?style=for-the-badge&logo=postgresql&logoColor=6CA6E0" alt="SQL" /> <img src="https://img.shields.io/badge/HTML-161b22?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> <img src="https://img.shields.io/badge/CSS-161b22?style=for-the-badge&logo=css&logoColor=663399" alt="CSS" /></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/languages-dark.svg" /><img src="assets/stack/languages-light.svg" height="44" alt="TypeScript, JavaScript, C#, HTML, CSS" /></picture></td>
   </tr>
   <tr>
     <td><b>Frontend</b></td>
-    <td><img src="https://img.shields.io/badge/React-161b22?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Vite-161b22?style=for-the-badge&logo=vite&logoColor=9135FF" alt="Vite" /> <img src="https://img.shields.io/badge/Tailwind_CSS-161b22?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Framer_Motion-161b22?style=for-the-badge&logo=framer&logoColor=FFFFFF" alt="Framer Motion" /> <img src="https://img.shields.io/badge/Zod-161b22?style=for-the-badge&logo=zod&logoColor=3E67B1" alt="Zod" /></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/frontend-dark.svg" /><img src="assets/stack/frontend-light.svg" height="44" alt="React, Vite, Tailwind CSS, Material UI, Zod, Framer Motion" /></picture></td>
   </tr>
   <tr>
-    <td><b>Desktop & mobile</b></td>
-    <td><img src="https://img.shields.io/badge/Electron-161b22?style=for-the-badge&logo=electron&logoColor=9FEAF9" alt="Electron" /> <img src="https://img.shields.io/badge/React_Native-161b22?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Expo-161b22?style=for-the-badge&logo=expo&logoColor=FFFFFF" alt="Expo" /></td>
+    <td><b>Desktop &amp; mobile</b></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/apps-dark.svg" /><img src="assets/stack/apps-light.svg" height="44" alt="Electron, Expo, React Native" /></picture></td>
   </tr>
   <tr>
-    <td><b>Backend & data</b></td>
-    <td><img src="https://img.shields.io/badge/ASP.NET_Core-161b22?style=for-the-badge&logo=dotnet&logoColor=A57BE8" alt=".NET" /> <img src="https://img.shields.io/badge/PostgreSQL-161b22?style=for-the-badge&logo=postgresql&logoColor=6CA6E0" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/Supabase-161b22?style=for-the-badge&logo=supabase&logoColor=3FCF8E" alt="Supabase" /> <img src="https://img.shields.io/badge/Firebase-161b22?style=for-the-badge&logo=firebase&logoColor=FFCA28" alt="Firebase" /> <img src="https://img.shields.io/badge/Node.js-161b22?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E" alt="Node.js" /></td>
+    <td><b>Backend &amp; data</b></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/backend-dark.svg" /><img src="assets/stack/backend-light.svg" height="44" alt=".NET, Node.js, PostgreSQL, Supabase, Firebase" /></picture></td>
   </tr>
   <tr>
     <td><b>AI</b></td>
-    <td><img src="https://img.shields.io/badge/Gemini_API-161b22?style=for-the-badge&logo=googlegemini&logoColor=8E75B2" alt="Google Gemini" /> <img src="https://img.shields.io/badge/DeepSeek-161b22?style=for-the-badge&logo=deepseek&logoColor=4D6BFE" alt="DeepSeek" /> <img src="https://img.shields.io/badge/Claude_Code-161b22?style=for-the-badge&logo=claude&logoColor=D97757" alt="Claude Code" /></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/ai-dark.svg" /><img src="assets/stack/ai-light.svg" height="44" alt="Google Gemini, DeepSeek, Claude" /></picture></td>
   </tr>
   <tr>
-    <td><b>DevOps & testing</b></td>
-    <td><img src="https://img.shields.io/badge/Docker-161b22?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" /> <img src="https://img.shields.io/badge/Vercel-161b22?style=for-the-badge&logo=vercel&logoColor=FFFFFF" alt="Vercel" /> <img src="https://img.shields.io/badge/GitHub_Actions-161b22?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="GitHub Actions" /> <img src="https://img.shields.io/badge/Jest-161b22?style=for-the-badge&logo=jest&logoColor=C21325" alt="Jest" /> <img src="https://img.shields.io/badge/Vitest-161b22?style=for-the-badge&logo=vitest&logoColor=6E9F18" alt="Vitest" /> <img src="https://img.shields.io/badge/xUnit-161b22?style=for-the-badge&logo=dotnet&logoColor=A57BE8" alt="xUnit" /> <img src="https://img.shields.io/badge/Git-161b22?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" /></td>
+    <td><b>DevOps &amp; testing</b></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/devops-dark.svg" /><img src="assets/stack/devops-light.svg" height="44" alt="Docker, Vercel, GitHub Actions, Jest, Vitest, Git, GitHub" /></picture></td>
   </tr>
   <tr>
     <td><b>Design</b></td>
-    <td><img src="https://img.shields.io/badge/Figma-161b22?style=for-the-badge&logo=figma&logoColor=F24E1E" alt="Figma" /> <img src="https://img.shields.io/badge/Affinity-161b22?style=for-the-badge" alt="Affinity" /></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/design-dark.svg" /><img src="assets/stack/design-light.svg" height="44" alt="Figma" /></picture></td>
   </tr>
 </table>
 
@@ -172,8 +169,8 @@ Founders say what they need, such as an invoice, a brand palette or a business p
 ## Contact
 
 <p align="center">
-  <a href="mailto:rikush60@gmail.com"><img src="https://img.shields.io/badge/rikush60@gmail.com-161b22?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email rikush60@gmail.com" /></a>
+  <a href="mailto:rikuspretorius.web@gmail.com"><img src="https://img.shields.io/badge/rikuspretorius.web@gmail.com-161b22?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email rikuspretorius.web@gmail.com" /></a>
   <a href="https://github.com/wrapperik"><img src="https://img.shields.io/badge/wrapperik-161b22?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub wrapperik" /></a>
 </p>
 
-<sub>The hero, project and stats cards on this page are SVGs generated by <a href="scripts/generate.mjs">a small Node script</a> and refreshed daily by <a href=".github/workflows/refresh-cards.yml">a GitHub Action</a>. They follow your light or dark theme and respect reduced-motion settings.</sub>
+<sub>The hero, project and stats cards on this page are SVGs generated by <a href="scripts/generate.mjs">a small Node script</a> and refreshed daily by <a href=".github/workflows/refresh-cards.yml">a GitHub Action</a>. They follow your light or dark theme and respect reduced-motion settings. Stack icons from <a href="https://skillicons.dev">Skill Icons</a> and <a href="https://simpleicons.org">Simple Icons</a>; type set in <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> (SIL Open Font License).</sub>
