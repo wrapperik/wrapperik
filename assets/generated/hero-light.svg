@@ -12,14 +12,8 @@
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .rm-show { opacity: 1 !important; } .rm-hide { opacity: 0 !important; } }
 </style>
 <defs>
-  <radialGradient id="glow" cx="50%" cy="0%" r="75%" fx="50%" fy="0%" gradientTransform="translate(0 0) scale(1 1.15)">
-    <stop offset="0%" stop-color="#3B9DFF" stop-opacity="0.22"/>
-    <stop offset="55%" stop-color="#3B9DFF" stop-opacity="0.055"/>
-    <stop offset="100%" stop-color="#3B9DFF" stop-opacity="0"/>
-  </radialGradient>
   <clipPath id="av"><circle cx="116" cy="118" r="61"/></clipPath>
 </defs>
-<rect width="840" height="230" fill="url(#glow)"/>
 <g class="spin">
   <circle cx="116" cy="118" r="70" fill="none" stroke="#5B2A9E" stroke-width="5" stroke-linecap="round" stroke-dasharray="132.6 307.2" transform="rotate(-90 116 118)"/>
   <circle cx="116" cy="118" r="70" fill="none" stroke="#B5371F" stroke-width="5" stroke-linecap="round" stroke-dasharray="132.6 307.2" transform="rotate(30 116 118)"/>

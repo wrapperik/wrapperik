@@ -34,13 +34,11 @@ const PROJECTS = [
 const THEMES = {
   dark: {
     card: '#161b22', border: '#30363d', text: '#e6edf3', muted: '#8b949e', faint: '#21262d',
-    glow: '#3B9DFF', glowOpacity: 0.32,
     accent: '#F2C21E', heat: ['#21262d', '#4d3f0c', '#8a6c10', '#c99d16', '#F2C21E'],
     koru: '#A57BE8', cardinal: '#E5694E', droplet: '#3B9DFF',
   },
   light: {
     card: '#ffffff', border: '#d0d7de', text: '#1f2328', muted: '#59636e', faint: '#eaeef2',
-    glow: '#3B9DFF', glowOpacity: 0.22,
     accent: '#9A6700', heat: ['#ebedf0', '#fbe7a1', '#f2cb45', '#d9a10b', '#9a6700'],
     koru: '#5B2A9E', cardinal: '#B5371F', droplet: '#1F6FD1',
   },
@@ -197,14 +195,8 @@ function hero(t, data) {
   ${reduceMotion}
 </style>
 <defs>
-  <radialGradient id="glow" cx="50%" cy="0%" r="75%" fx="50%" fy="0%" gradientTransform="translate(0 0) scale(1 1.15)">
-    <stop offset="0%" stop-color="${t.glow}" stop-opacity="${t.glowOpacity}"/>
-    <stop offset="55%" stop-color="${t.glow}" stop-opacity="${(t.glowOpacity / 4).toFixed(3)}"/>
-    <stop offset="100%" stop-color="${t.glow}" stop-opacity="0"/>
-  </radialGradient>
   <clipPath id="av"><circle cx="${cx}" cy="${cy}" r="${r - 9}"/></clipPath>
 </defs>
-<rect width="${W}" height="${H}" fill="url(#glow)"/>
 <g class="spin">
   ${ring}
 </g>
