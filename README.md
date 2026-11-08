@@ -68,7 +68,7 @@ My three DV300 major projects from 2026. Each repository has full documentation:
 
 <h3><img src="assets/generated/koru-title.svg" width="100%" alt="Koru" /></h3>
 
-<a href="https://github.com/wrapperik/koru"><img src="assets/projects/koru.webp" width="100%" alt="Koru running in a desktop window, with its dashboard, course list, assignments and progress cards" /></a>
+<a href="https://github.com/wrapperik/koru"><img src="assets/projects/koru-hero.webp" width="100%" alt="Koru: one place to teach, learn and run a campus, with the lecturer dashboard shown in desktop windows" /></a>
 
 **A cross-platform learning management system for students, lecturers and administrators.**
 
@@ -88,8 +88,8 @@ Koru replaces a college's patchwork of tools with one POPIA-compliant platform f
 <details>
 <summary><b>More screens</b></summary>
 <br />
-<img src="assets/projects/koru-teacher.webp" width="49%" alt="Koru lecturer view" />
-<img src="assets/projects/koru-admin.webp" width="49%" alt="Koru administrator view" />
+<img src="assets/projects/koru-centrepiece.webp" width="49%" alt="Koru lecturer dashboard surrounded by its key features: check-in code, class average, grade distribution and at-risk students" />
+<img src="assets/projects/koru-assistant.webp" width="49%" alt="Koru assistant answering which students need a check-in" />
 </details>
 
 </td>
