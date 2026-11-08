@@ -18,6 +18,13 @@ const YEAR = NOW.getUTCFullYear();
 const YEAR_START = `${YEAR}-01-01T00:00:00Z`;
 
 // Static facts that the API cannot tell us (from each project's README).
+// Solid brand strips used as the project titles in the README.
+const BRANDS = {
+  koru: { bg: '#4A1D96', fg: '#FFFFFF', line: 'Desktop app · Windows and macOS · Team project · Mar–Nov 2026' },
+  cardinal: { bg: '#C8432B', fg: '#FFFFFF', line: 'Mobile app · iOS and Android · Solo project · Aug–Nov 2026' },
+  droplet: { bg: '#3B9DFF', fg: '#121212', line: 'Web app · Solo project · October 2026' },
+};
+
 const PROJECTS = [
   { key: 'koru', repo: 'koru', name: 'Koru', kind: 'Desktop LMS', team: 'Team of 4', tests: 216, mine: true },
   { key: 'cardinal', repo: 'cardinal', name: 'Cardinal', kind: 'Mobile revision app', team: 'Solo', tests: 390, testsPlus: true },
@@ -154,10 +161,10 @@ async function fetchProject(p, userId) {
 // ---------- svg helpers ----------
 
 const reduceMotion = `@media (prefers-reduced-motion: reduce) { * { animation: none !important; } .rm-show { opacity: 1 !important; } .rm-hide { opacity: 0 !important; } }`;
-const frame = (w, h, t, body, title, bare = false) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
+const frame = (w, h, t, body, title, bare = false, stroke = null, sw = 1) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
 <title>${esc(title)}</title>
 <style>${FONT_FACE}</style>
-${bare ? '' : `<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="14" fill="${t.card}" stroke="${t.border}"/>`}
+${bare ? '' : `<rect x="${sw / 2}" y="${sw / 2}" width="${w - sw}" height="${h - sw}" rx="14" fill="${t.card}" stroke="${stroke ?? t.border}" stroke-width="${sw}"/>`}
 ${body}
 </svg>
 `;
@@ -311,7 +318,6 @@ function pulse(t, p, d) {
   @keyframes rise { from { transform: scaleY(0); } }
   ${reduceMotion}
 </style>
-<rect x="0" y="22" width="5" height="${H - 44}" rx="2.5" fill="${col}"/>
 <circle cx="38" cy="40" r="6" fill="${col}"/>
 <text x="54" y="45" font-family="${MONO}" font-size="13" font-weight="700" letter-spacing="2" fill="${t.text}">${esc(p.name.toUpperCase())}</text>
 <text x="${54 + p.name.length * 13 + 14}" y="45" font-family="${SANS}" font-size="13" fill="${t.muted}">${esc(p.kind)} · ${esc(p.team)}</text>
@@ -320,7 +326,15 @@ ${mSvg}
 ${bars}
 <line x1="${sx}" y1="${base + 0.5}" x2="${sx + sw}" y2="${base + 0.5}" stroke="${t.border}"/>
 <text x="${sx}" y="142" font-family="${MONO}" font-size="10.5" fill="${t.muted}">COMMITS PER WEEK · ${YEAR}</text>`;
-  return frame(W, H, t, body, `${p.name}: ${fmt(d.commits)} commits, ${fmt(d.branches)} branches, ${fmt(p.tests)} tests`);
+  return frame(W, H, t, body, `${p.name}: ${fmt(d.commits)} commits, ${fmt(d.branches)} branches, ${fmt(p.tests)} tests`, false, col, 5);
+}
+
+function title(p) {
+  const W = 840, H = 76, b = BRANDS[p.key];
+  const body = `<rect width="${W}" height="${H}" rx="14" fill="${b.bg}"/>
+<text x="30" y="49" font-family="${SANS}" font-size="30" font-weight="700" letter-spacing="1" fill="${b.fg}">${esc(p.name.toUpperCase())}</text>
+<text x="${W - 30}" y="44" text-anchor="end" font-family="${SANS}" font-size="13.5" font-weight="600" fill="${b.fg}" fill-opacity=".85">${esc(b.line)}</text>`;
+  return frame(W, H, THEMES.dark, body, p.name, true);
 }
 
 // ---------- main ----------
@@ -340,6 +354,7 @@ for (const p of PROJECTS) {
   projects[p.key] = fresh ?? cache.projects?.[p.key];
 }
 
+for (const p of PROJECTS) await writeFile(join(OUT, `${p.key}-title.svg`), title(p));
 for (const [mode, t] of Object.entries(THEMES)) {
   await writeFile(join(OUT, `hero-${mode}.svg`), hero(t, profile));
   await writeFile(join(OUT, `stats-${mode}.svg`), stats(t, profile));

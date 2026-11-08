@@ -62,12 +62,11 @@ This year I shipped three products: a cross-platform learning management system 
 
 My three DV300 major projects from 2026. Each repository has full documentation: setup, architecture, testing and a demo.
 
-### Koru
+<h3><img src="assets/generated/koru-title.svg" width="100%" alt="Koru" /></h3>
 
 <a href="https://github.com/wrapperik/koru"><img src="assets/projects/koru.webp" width="100%" alt="Koru running in a desktop window, with its dashboard, course list, assignments and progress cards" /></a>
 
 **A cross-platform learning management system for students, lecturers and administrators.**
-<br /><sub>Desktop app for Windows and macOS · Team project · March to November 2026</sub>
 
 Koru replaces a college's patchwork of tools with one POPIA-compliant platform for courses, assignments, grading, attendance, timetables and analytics, each tailored to the role that signs in.
 
@@ -89,12 +88,11 @@ Koru replaces a college's patchwork of tools with one POPIA-compliant platform f
 <img src="assets/projects/koru-admin.webp" width="49%" alt="Koru administrator view" />
 </details>
 
-### Cardinal
+<h3><img src="assets/generated/cardinal-title.svg" width="100%" alt="Cardinal" /></h3>
 
 <a href="https://github.com/wrapperik/cardinal"><img src="assets/projects/cardinal.webp" width="100%" alt="Two phones running Cardinal: a question with answers at the compass points, and a course-complete screen" /></a>
 
 **A revision app where the direction you swipe is the answer.**
-<br /><sub>Mobile app for iOS and Android · Solo project · August to November 2026</sub>
 
 Each question's answers sit at the four compass points around it, and you flick towards the one you believe is right. The original design has no buttons at all; version 2.0 adds a tap-based Traditional mode so the app works for everyone. Students upload their own notes, and Gemini turns them into decks through a Cloud Function, so the API key never reaches the device.
 
@@ -118,12 +116,11 @@ Each question's answers sit at the four compass points around it, and you flick 
 <img src="assets/projects/cardinal-games.webp" width="49%" alt="Cardinal game templates and checkpoint screen" />
 </details>
 
-### Droplet
+<h3><img src="assets/generated/droplet-title.svg" width="100%" alt="Droplet" /></h3>
 
 <a href="https://droplet-tan.vercel.app"><img src="assets/projects/droplet.webp" width="100%" alt="Droplet's start screen with the message bar, the workspaces menu, the board and the brand palette" /></a>
 
 **An AI workspace for small business owners that builds the interface around the task.**
-<br /><sub>Web app · Solo project · October 2026</sub>
 
 Founders say what they need, such as an invoice, a brand palette or a business plan, and Droplet opens the right workspace from a library of tested components. The model decides what to show; the app's own code draws it, checks it and does the sums, so totals and VAT are never left to the AI.
 
